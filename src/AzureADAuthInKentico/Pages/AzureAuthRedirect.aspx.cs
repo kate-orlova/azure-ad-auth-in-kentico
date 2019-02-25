@@ -9,6 +9,9 @@ namespace AzureADAuthInKentico.Pages
         {
             ClientCredential credential = new ClientCredential(Constants.AzureActiveDirectory.ClientId,
                 Constants.AzureActiveDirectory.AppKey);
+            var authContext =
+                new AuthenticationContext(string.Format(Constants.AzureActiveDirectory.Authority,
+                    Constants.AzureActiveDirectory.TenantId));
 
         }
     }
