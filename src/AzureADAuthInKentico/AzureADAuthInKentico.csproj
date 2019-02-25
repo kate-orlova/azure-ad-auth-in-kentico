@@ -78,10 +78,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\AzureAuthRedirect.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Pages\AzureAuthRedirect.aspx.cs">
+      <DependentUpon>AzureAuthRedirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AzureAuthRedirect.aspx.designer.cs">
+      <DependentUpon>AzureAuthRedirect.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Settings\AzureActiveDirectory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
