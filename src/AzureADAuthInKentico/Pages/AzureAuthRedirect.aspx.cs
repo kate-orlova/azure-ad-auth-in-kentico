@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 namespace AzureADAuthInKentico.Pages
 {
@@ -6,6 +7,8 @@ namespace AzureADAuthInKentico.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ClientCredential credential = new ClientCredential(Constants.AzureActiveDirectory.ClientId,
+                Constants.AzureActiveDirectory.AppKey);
 
         }
     }
