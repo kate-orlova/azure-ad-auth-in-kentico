@@ -43,7 +43,7 @@ namespace AzureADAuthInKentico.Pages
                 await
                     authenticationContext.AcquireTokenAsync(
                         string.Format(Constants.AzureActiveDirectory.GraphResourceUri, ""), clientCred);
-            return null;
+            return authenticationResult.AccessToken;
         }
     }
 }
