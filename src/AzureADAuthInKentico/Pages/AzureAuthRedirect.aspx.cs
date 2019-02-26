@@ -25,6 +25,12 @@ namespace AzureADAuthInKentico.Pages
             var adClient = new ActiveDirectoryClient(
                 new Uri(string.Format(Constants.AzureActiveDirectory.GraphResourceUri, result.TenantId)),
                 async () => await GetAppTokenAsync(result.TenantId));
+            var adUser =
+                (User)
+                await
+                    adClient.Users.Where(x => x.UserPrincipalName.Equals(result.UserInfo.DisplayableId))
+                        .Expand(x => x.MemberOf)
+                        .ExecuteSingleAsync();
 
 
         }
