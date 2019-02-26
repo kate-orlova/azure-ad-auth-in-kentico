@@ -38,6 +38,9 @@ namespace AzureADAuthInKentico.Pages
                 UserInfoProvider.GetUsers()
                     .Where("AzureADUsername", QueryOperator.Equals, adUser.UserPrincipalName)
                     .FirstOrDefault();
+            var groupsToAdd = adUser.MemberOf.OfType<Group>()
+                .Select(x => x.DisplayName)
+                .Where(x => Constants.AzureActiveDirectory.GroupsToSync.Contains(x));
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
