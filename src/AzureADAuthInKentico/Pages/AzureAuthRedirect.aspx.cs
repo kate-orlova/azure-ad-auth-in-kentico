@@ -39,6 +39,10 @@ namespace AzureADAuthInKentico.Pages
                 new AuthenticationContext(string.Format(Constants.AzureActiveDirectory.Authority, tenantId), false);
             ClientCredential clientCred = new ClientCredential(Constants.AzureActiveDirectory.ClientId,
                 Constants.AzureActiveDirectory.AppKey);
+            AuthenticationResult authenticationResult =
+                await
+                    authenticationContext.AcquireTokenAsync(
+                        string.Format(Constants.AzureActiveDirectory.GraphResourceUri, ""), clientCred);
             return null;
         }
     }
