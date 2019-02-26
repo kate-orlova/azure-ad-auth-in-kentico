@@ -37,6 +37,8 @@ namespace AzureADAuthInKentico.Pages
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
         {
+            AuthenticationContext authenticationContext =
+                new AuthenticationContext(string.Format(Constants.AzureActiveDirectory.Authority, tenantId), false);
             return null;
         }
     }
