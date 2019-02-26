@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
+using CMS.DataEngine;
 using CMS.Helpers;
+using CMS.Membership;
 using Microsoft.Azure.ActiveDirectory.GraphClient;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -31,6 +34,10 @@ namespace AzureADAuthInKentico.Pages
                     adClient.Users.Where(x => x.UserPrincipalName.Equals(result.UserInfo.DisplayableId))
                         .Expand(x => x.MemberOf)
                         .ExecuteSingleAsync();
+            var user =
+                UserInfoProvider.GetUsers()
+                    .Where("AzureADUsername", QueryOperator.Equals, adUser.UserPrincipalName)
+                    .FirstOrDefault();
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)

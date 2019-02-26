@@ -44,11 +44,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CMS.Base">
+      <HintPath>..\lib\CMS.Base.dll</HintPath>
+    </Reference>
     <Reference Include="CMS.DataEngine">
       <HintPath>..\lib\CMS.DataEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Helpers">
       <HintPath>..\lib\CMS.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Membership">
+      <HintPath>..\lib\CMS.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.ActiveDirectory.GraphClient">
       <HintPath>..\..\packages\Microsoft.Azure.ActiveDirectory.GraphClient.2.1.0\lib\portable-net4+sl5+win+wpa+wp8\Microsoft.Azure.ActiveDirectory.GraphClient.dll</HintPath>
