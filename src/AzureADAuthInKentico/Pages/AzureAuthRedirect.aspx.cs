@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Web;
 using CMS.Helpers;
+using Microsoft.Azure.ActiveDirectory.GraphClient;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 namespace AzureADAuthInKentico.Pages
@@ -20,8 +22,16 @@ namespace AzureADAuthInKentico.Pages
                     authContext.AcquireTokenByAuthorizationCodeAsync(code,
                         new Uri(Request.Url.GetLeftPart(UriPartial.Path)), credential,
                         string.Format(Constants.AzureActiveDirectory.GraphResourceUri, ""));
+            var adClient = new ActiveDirectoryClient(
+                new Uri(string.Format(Constants.AzureActiveDirectory.GraphResourceUri, result.TenantId)),
+                async () => await GetAppTokenAsync(result.TenantId));
 
 
+        }
+
+        private static async Task<string> GetAppTokenAsync(string tenantId)
+        {
+            return null;
         }
     }
 }
