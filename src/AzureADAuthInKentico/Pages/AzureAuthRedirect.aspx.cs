@@ -31,14 +31,14 @@ namespace AzureADAuthInKentico.Pages
                     adClient.Users.Where(x => x.UserPrincipalName.Equals(result.UserInfo.DisplayableId))
                         .Expand(x => x.MemberOf)
                         .ExecuteSingleAsync();
-
-
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
         {
             AuthenticationContext authenticationContext =
                 new AuthenticationContext(string.Format(Constants.AzureActiveDirectory.Authority, tenantId), false);
+            ClientCredential clientCred = new ClientCredential(Constants.AzureActiveDirectory.ClientId,
+                Constants.AzureActiveDirectory.AppKey);
             return null;
         }
     }
