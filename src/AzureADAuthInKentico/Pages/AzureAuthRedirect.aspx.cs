@@ -68,6 +68,16 @@ namespace AzureADAuthInKentico.Pages
                             .FirstOrDefault()?.RoleName ?? "", SiteContext.CurrentSiteName);
                 }
             }
+            else
+            {
+                user.FirstName = adUser.GivenName;
+                user.LastName = adUser.Surname;
+                user.FullName = adUser.DisplayName;
+                user.Email = adUser.Mail.IfEmpty(adUser.OtherMails.FirstOrDefault());
+                user.IsExternal = true;
+                UserInfoProvider.SetUserInfo(user);
+                UserInfoProvider.AddUserToSite(user.UserName, SiteContext.CurrentSiteName);
+            }
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
