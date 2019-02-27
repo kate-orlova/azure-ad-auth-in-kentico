@@ -2,9 +2,11 @@
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
+using AzureADAuthInKentico.Extensions;
 using CMS.DataEngine;
 using CMS.Helpers;
 using CMS.Membership;
+using CMS.SiteProvider;
 using Microsoft.Azure.ActiveDirectory.GraphClient;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -43,6 +45,20 @@ namespace AzureADAuthInKentico.Pages
                 .Where(x => Constants.AzureActiveDirectory.GroupsToSync.Contains(x));
             var groupsToRemove = Constants.AzureActiveDirectory.GroupsToSync
                 .Where(x => !groupsToAdd.Contains(x));
+            if (user == null)
+            {
+                user = new CMS.Membership.UserInfo();
+                user.UserName = adUser.UserPrincipalName;
+                user.FirstName = adUser.GivenName;
+                user.LastName = adUser.Surname;
+                user.FullName = adUser.DisplayName;
+                user.Email = adUser.Mail.IfEmpty(adUser.OtherMails.FirstOrDefault());
+                user.SetValue("AzureADUsername", adUser.UserPrincipalName);
+                user.IsExternal = true;
+                user.Enabled = true;
+                UserInfoProvider.SetUserInfo(user);
+                UserInfoProvider.AddUserToSite(user.UserName, SiteContext.CurrentSiteName);
+            }
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
