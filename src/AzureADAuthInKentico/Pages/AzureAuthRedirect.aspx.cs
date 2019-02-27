@@ -77,6 +77,14 @@ namespace AzureADAuthInKentico.Pages
                 user.IsExternal = true;
                 UserInfoProvider.SetUserInfo(user);
                 UserInfoProvider.AddUserToSite(user.UserName, SiteContext.CurrentSiteName);
+                foreach (var group in groupsToAdd)
+                {
+                    UserInfoProvider.AddUserToRole(user.UserName,
+                        RoleInfoProvider.GetRoles()
+                            .OnSite(SiteContext.CurrentSiteID)
+                            .Where("RoleDisplayName", QueryOperator.Equals, group)
+                            .FirstOrDefault()?.RoleName ?? "", SiteContext.CurrentSiteName);
+                }
             }
         }
 
