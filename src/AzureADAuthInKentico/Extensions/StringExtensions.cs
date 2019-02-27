@@ -6,5 +6,9 @@
         {
             return !string.IsNullOrEmpty(value);
         }
+        public static string IfEmpty(this string value, string emptyResult)
+        {
+            return string.IsNullOrEmpty(value) ? emptyResult : value;
+        }
     }
 }
