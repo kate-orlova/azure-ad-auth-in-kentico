@@ -85,6 +85,14 @@ namespace AzureADAuthInKentico.Pages
                             .Where("RoleDisplayName", QueryOperator.Equals, group)
                             .FirstOrDefault()?.RoleName ?? "", SiteContext.CurrentSiteName);
                 }
+                foreach (var group in groupsToRemove)
+                {
+                    UserInfoProvider.RemoveUserFromRole(user.UserName,
+                        RoleInfoProvider.GetRoles()
+                            .OnSite(SiteContext.CurrentSiteID)
+                            .Where("RoleDisplayName", QueryOperator.Equals, group)
+                            .FirstOrDefault()?.RoleName ?? "", SiteContext.CurrentSiteName);
+                }
             }
         }
 
