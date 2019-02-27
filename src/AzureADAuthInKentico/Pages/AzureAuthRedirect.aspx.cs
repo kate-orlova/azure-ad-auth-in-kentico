@@ -41,6 +41,8 @@ namespace AzureADAuthInKentico.Pages
             var groupsToAdd = adUser.MemberOf.OfType<Group>()
                 .Select(x => x.DisplayName)
                 .Where(x => Constants.AzureActiveDirectory.GroupsToSync.Contains(x));
+            var groupsToRemove = Constants.AzureActiveDirectory.GroupsToSync
+                .Where(x => !groupsToAdd.Contains(x));
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
