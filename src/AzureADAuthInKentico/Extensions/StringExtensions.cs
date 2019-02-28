@@ -10,5 +10,9 @@
         {
             return string.IsNullOrEmpty(value) ? emptyResult : value;
         }
+        public static bool IsEmpty(this string value)
+        {
+            return string.IsNullOrEmpty(value);
+        }
     }
 }
