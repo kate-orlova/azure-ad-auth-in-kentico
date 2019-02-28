@@ -3,7 +3,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using AzureADAuthInKentico.Extensions;
+using CMS.Activities.Loggers;
 using CMS.DataEngine;
+using CMS.DocumentEngine;
 using CMS.Helpers;
 using CMS.Membership;
 using CMS.SiteProvider;
@@ -95,6 +97,7 @@ namespace AzureADAuthInKentico.Pages
                 }
             }
             AuthenticationHelper.AuthenticateUser(user.UserName, false);
+            MembershipActivityLogger.LogLogin(user.UserName, DocumentContext.CurrentDocument);
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)

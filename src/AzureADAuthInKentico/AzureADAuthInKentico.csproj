@@ -44,11 +44,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CMS.Activities.Loggers">
+      <HintPath>..\lib\CMS.Activities.Loggers.dll</HintPath>
+    </Reference>
     <Reference Include="CMS.Base">
       <HintPath>..\lib\CMS.Base.dll</HintPath>
     </Reference>
     <Reference Include="CMS.DataEngine">
       <HintPath>..\lib\CMS.DataEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DocumentEngine">
+      <HintPath>..\lib\CMS.DocumentEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Helpers">
       <HintPath>..\lib\CMS.Helpers.dll</HintPath>
