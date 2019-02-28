@@ -12,6 +12,7 @@ namespace AzureADAuthInKentico.Constants
         public static string ClientId => SettingsKeyInfoProvider.GetValue("AzureClientId");
         public static string AppKey => SettingsKeyInfoProvider.GetValue("AzureApplicationKey");
         public static string TenantId => SettingsKeyInfoProvider.GetValue("AzureTenantId");
+        public static string PostLoginPage => SettingsKeyInfoProvider.GetValue("PostLoginPage");
         public static List<string> GroupsToSync
             =>
                 SettingsKeyInfoProvider.GetValue("AzureGroupsToSync")
