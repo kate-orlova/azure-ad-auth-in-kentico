@@ -67,6 +67,9 @@
     <Reference Include="CMS.Helpers">
       <HintPath>..\lib\CMS.Helpers.dll</HintPath>
     </Reference>
+    <Reference Include="CMS.Localization">
+      <HintPath>..\lib\CMS.Localization.dll</HintPath>
+    </Reference>
     <Reference Include="CMS.Membership">
       <HintPath>..\lib\CMS.Membership.dll</HintPath>
     </Reference>

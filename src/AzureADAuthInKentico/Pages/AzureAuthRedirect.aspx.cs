@@ -8,6 +8,7 @@ using CMS.DataEngine;
 using CMS.DocumentEngine;
 using CMS.EventLog;
 using CMS.Helpers;
+using CMS.Localization;
 using CMS.Membership;
 using CMS.SiteProvider;
 using Microsoft.Azure.ActiveDirectory.GraphClient;
@@ -110,6 +111,12 @@ namespace AzureADAuthInKentico.Pages
             {
                 EventLogProvider.LogException("AzureActiveDirectory", "Login", exception);
             }
+
+            var postLoginPage = DocumentHelper.GetDocuments()
+                .WhereEquals("NodeAliasPath", Constants.AzureActiveDirectory.PostLoginPage)
+                .FirstOrDefault(x => x.DocumentCulture.Equals(LocalizationContext.CurrentCulture.CultureCode, StringComparison.InvariantCultureIgnoreCase));
+            
+              
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
