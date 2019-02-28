@@ -94,6 +94,7 @@ namespace AzureADAuthInKentico.Pages
                             .FirstOrDefault()?.RoleName ?? "", SiteContext.CurrentSiteName);
                 }
             }
+            AuthenticationHelper.AuthenticateUser(user.UserName, false);
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
