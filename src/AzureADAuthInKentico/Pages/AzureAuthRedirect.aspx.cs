@@ -114,9 +114,9 @@ namespace AzureADAuthInKentico.Pages
 
             var postLoginPage = DocumentHelper.GetDocuments()
                 .WhereEquals("NodeAliasPath", Constants.AzureActiveDirectory.PostLoginPage)
-                .FirstOrDefault(x => x.DocumentCulture.Equals(LocalizationContext.CurrentCulture.CultureCode, StringComparison.InvariantCultureIgnoreCase));
-            
-              
+                .FirstOrDefault(x => x.DocumentCulture.Equals(LocalizationContext.CurrentCulture.CultureCode,
+                    StringComparison.InvariantCultureIgnoreCase));
+            var returnUrl = HttpContext.Current.Request.GetReturnUrl(postLoginPage.GetRelativeUrl());
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
