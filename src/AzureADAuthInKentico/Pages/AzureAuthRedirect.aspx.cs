@@ -117,6 +117,7 @@ namespace AzureADAuthInKentico.Pages
                 .FirstOrDefault(x => x.DocumentCulture.Equals(LocalizationContext.CurrentCulture.CultureCode,
                     StringComparison.InvariantCultureIgnoreCase));
             var returnUrl = HttpContext.Current.Request.GetReturnUrl(postLoginPage.GetRelativeUrl());
+            URLHelper.Redirect(URLHelper.GetAbsoluteUrl(returnUrl));
         }
 
         private static async Task<string> GetAppTokenAsync(string tenantId)
