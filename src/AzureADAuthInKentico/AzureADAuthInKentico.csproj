@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TreeNodeExtensions.cs" />
     <Compile Include="Extensions\UrlHelperExtensions.cs" />
     <Compile Include="Pages\AzureAuthRedirect.aspx.cs">
       <DependentUpon>AzureAuthRedirect.aspx</DependentUpon>
