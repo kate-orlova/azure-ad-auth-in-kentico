@@ -60,6 +60,9 @@
     <Reference Include="CMS.DocumentEngine">
       <HintPath>..\lib\CMS.DocumentEngine.dll</HintPath>
     </Reference>
+    <Reference Include="CMS.DocumentEngine.Web.UI">
+      <HintPath>..\lib\CMS.DocumentEngine.Web.UI.dll</HintPath>
+    </Reference>
     <Reference Include="CMS.EventLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\CMS.EventLog.dll</HintPath>
