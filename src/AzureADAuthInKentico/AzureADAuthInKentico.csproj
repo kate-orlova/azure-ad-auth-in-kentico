@@ -50,6 +50,9 @@
     <Reference Include="CMS.Base">
       <HintPath>..\lib\CMS.Base.dll</HintPath>
     </Reference>
+    <Reference Include="CMS.Base.Web.UI">
+      <HintPath>..\lib\CMS.Base.Web.UI.dll</HintPath>
+    </Reference>
     <Reference Include="CMS.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\CMS.Core.dll</HintPath>
@@ -75,6 +78,10 @@
     </Reference>
     <Reference Include="CMS.Membership">
       <HintPath>..\lib\CMS.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.PortalEngine.Web.UI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\CMS.PortalEngine.Web.UI.dll</HintPath>
     </Reference>
     <Reference Include="CMS.SiteProvider">
       <HintPath>..\lib\CMS.SiteProvider.dll</HintPath>
