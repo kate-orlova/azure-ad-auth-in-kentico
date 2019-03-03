@@ -1,5 +1,6 @@
 ﻿using System;
 using CMS.PortalEngine.Web.UI;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 namespace AzureADAuthInKentico.Views
 {
@@ -20,6 +21,9 @@ namespace AzureADAuthInKentico.Views
 
         protected void SetupControl()
         {
+            var authContext =
+                new AuthenticationContext(string.Format(Constants.AzureActiveDirectory.Authority,
+                    Constants.AzureActiveDirectory.TenantId));
         }
     }
 }
