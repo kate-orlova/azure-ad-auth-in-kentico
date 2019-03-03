@@ -37,6 +37,7 @@ namespace AzureADAuthInKentico.Views
             btnAzureSignIn.NavigateUrl = authorizationUrl.AbsoluteUri;
             var returnUrl = HttpContext.Current.Request.GetReturnUrl(null);
             if (returnUrl.IsNotEmpty()) SessionHelper.SetValue("returnurl", returnUrl);
+            DataBind();
         }
     }
 }
