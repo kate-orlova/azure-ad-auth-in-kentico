@@ -5,9 +5,21 @@ namespace AzureADAuthInKentico.Views
 {
     public partial class Login : CMSAbstractWebPart
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public override void OnContentLoaded()
         {
+            base.OnContentLoaded();
+            SetupControl();
+        }
 
+        public override void ReloadData()
+        {
+            base.ReloadData();
+
+            SetupControl();
+        }
+
+        protected void SetupControl()
+        {
         }
     }
 }
