@@ -32,6 +32,7 @@ namespace AzureADAuthInKentico.Views
                         Constants.AzureActiveDirectory.ClientId,
                         new Uri(URLHelper.GetAbsoluteUrl(Constants.AzureActiveDirectory.KenticoRedirectPage)),
                         UserIdentifier.AnyUser, null);
+            btnAzureSignIn.NavigateUrl = authorizationUrl.AbsoluteUri;
         }
     }
 }
