@@ -24,6 +24,7 @@ namespace AzureADAuthInKentico.Views
 
         protected async void SetupControl()
         {
+            if (StopProcessing) return;
             var authContext =
                 new AuthenticationContext(string.Format(Constants.AzureActiveDirectory.Authority,
                     Constants.AzureActiveDirectory.TenantId));
