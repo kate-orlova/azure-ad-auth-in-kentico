@@ -128,6 +128,7 @@
   <ItemGroup>
     <Content Include="Pages\AzureAuthRedirect.aspx" />
     <Content Include="Views\Login.ascx" />
+    <Content Include="Views\Logout.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="Views\Login.ascx.designer.cs">
       <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Logout.ascx.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Logout.ascx.designer.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
