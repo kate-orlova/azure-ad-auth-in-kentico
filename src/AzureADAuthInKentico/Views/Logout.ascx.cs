@@ -13,6 +13,12 @@ namespace AzureADAuthInKentico.Views
             EnableViewState = false;
         }
 
+        protected override void OnPreRender(EventArgs e)
+        {
+            base.OnPreRender(e);
+            if (StopProcessing) return;
+        }
+
         protected void btnLogout_OnClick(object sender, EventArgs e)
         {
             AuthenticationHelper.SignOut();
