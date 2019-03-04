@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace AzureADAuthInKentico.Views
 {
@@ -12,6 +7,11 @@ namespace AzureADAuthInKentico.Views
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnLogout_OnClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
