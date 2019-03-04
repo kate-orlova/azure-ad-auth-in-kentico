@@ -7,8 +7,10 @@ namespace AzureADAuthInKentico.Views
 {
     public partial class Logout : CMSAbstractWebPart
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected override void OnInit(EventArgs e)
         {
+            base.OnInit(e);
+            EnableViewState = false;
         }
 
         protected void btnLogout_OnClick(object sender, EventArgs e)
