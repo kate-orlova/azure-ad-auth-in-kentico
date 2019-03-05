@@ -9,3 +9,6 @@ Prior to start integrating make sure that a Kentico application planning to outs
 
 # Contribution
 Hope you found the above solution helpful, your contributions and suggestions will be very much appreciated. Please submit a pull request with your code enhancements.
+
+# License
+The Azure AD authentication in Kentico module is released under the MIT license what means that you can modify and use it how you want even for commercial use. Please give it a star if you like it and your experience was positive.
