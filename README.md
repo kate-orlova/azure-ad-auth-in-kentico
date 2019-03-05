@@ -12,6 +12,8 @@ Prior to start integrating make sure that a Kentico application planning to outs
  * Application Key
  * Tenant Id
  * Azure Groups to sync
+ 
+The module comes with two user controls for Login and Logout functionality, and a proxy script (_/pages/AzureAuthRedirect.aspx_) implementing the integration routine. So, that you can adapt the user interface for your needs easily.
 
 # Contribution
 Hope you found the above solution helpful, your contributions and suggestions will be very much appreciated. Please submit a pull request with your code enhancements.
