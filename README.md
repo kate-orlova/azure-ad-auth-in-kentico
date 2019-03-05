@@ -1,3 +1,9 @@
+
+[![GitHub license](https://img.shields.io/github/license/kate-orlova/azure-ad-auth-in-kentico.svg)](https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/LICENSE)
+![GitHub language count](https://img.shields.io/github/languages/count/kate-orlova/azure-ad-auth-in-kentico.svg?style=flat)
+![GitHub top language](https://img.shields.io/github/languages/top/kate-orlova/azure-ad-auth-in-kentico.svg?style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/kate-orlova/azure-ad-auth-in-kentico.svg?style=flat)
+
 # Azure AD authentication in Kentico
 Azure AD authentication in Kentico project implements an Azure Active Directory identity provider for Kentico to verify user accounts existing in a business directory and issue security tokens upon successful authentication of those users.
 
