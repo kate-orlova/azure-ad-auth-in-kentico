@@ -17,6 +17,10 @@ The module comes with two user controls for Login and Logout functionality, and 
 
 Another thing to check in Settings is that you have specified a login page for users in front-end, go to _"Settings -> Security & Membership -> Content"_ and set a _"Website logon page URL"_ field to your login page with the placed Login control on it.
 
+How to secure a page on your website?
+1. Select a page you wish to put behind the login
+1. Go to _Page Properties -> Security_ tab
+
 # Contribution
 Hope you found the above solution helpful, your contributions and suggestions will be very much appreciated. Please submit a pull request with your code enhancements.
 
