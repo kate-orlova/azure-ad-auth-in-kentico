@@ -5,7 +5,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/kate-orlova/azure-ad-auth-in-kentico.svg?style=flat)
 
 # Azure AD authentication in Kentico
-Azure AD authentication in Kentico project implements an Azure Active Directory identity provider for Kentico to verify user accounts existing in a business directory and issue security tokens upon successful authentication of those users.
+Azure Active Directory (AD) authentication in Kentico project implements an Azure AD identity provider for Kentico to verify user accounts existing in a business directory and issue security tokens upon successful authentication of those users.
 
 Prior to start integrating make sure that a Kentico application planning to outsource an authentication to Azure AD is registered in Azure AD first. Azure AD registers and uniquely identifies an application in its directory. This solution supports the definition of registration parameters in Kentico Settings at a website / global level, the key configuration fields are
  * Client Id
@@ -17,7 +17,7 @@ The module comes with two user controls for Login and Logout functionality, and 
 
 Another thing to check in Settings is that you have specified a login page for users in front-end, go to _"Settings -> Security & Membership -> Content"_ and set a _"Website logon page URL"_ field to your login page with the placed Login control on it.
 
-How to secure a page on your website?
+How to secure a page on your Kentico website?
 1. Select a page you wish to put behind the login
 1. Go to _Page Properties -> Security_ tab
 1. Select the required user roles to restrict access to the page in _"Users and Roles"_ field under _Permissions_ section
