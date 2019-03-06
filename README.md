@@ -21,6 +21,7 @@ How to secure a page on your website?
 1. Select a page you wish to put behind the login
 1. Go to _Page Properties -> Security_ tab
 1. Select the required user roles to restrict access to the page in _"Users and Roles"_ field under _Permissions_ section
+1. Specify access rights in _"Access rights"_ table
 
 # Contribution
 Hope you found the above solution helpful, your contributions and suggestions will be very much appreciated. Please submit a pull request with your code enhancements.
