@@ -22,6 +22,9 @@ The below screnshots will guide you where to find the required Azure AD settings
 
 ![Azure application keys](/assets/azure_app_key.png)
 
+It is also important to enable access for your application as follows:  
+![Azure application permissions](/assets/azure_app_permissions.png)
+
 The module comes with two user controls for Login and Logout functionality, and a proxy script (_/pages/AzureAuthRedirect.aspx_) implementing the integration routine. So, that you can adapt the user interface for your needs easily.
 
 Another thing to check in Settings is that you have specified a login page for users in front-end, go to _"Settings -> Security & Membership -> Content"_ and set a _"Website logon page URL"_ field to your login page with the placed Login control on it.
