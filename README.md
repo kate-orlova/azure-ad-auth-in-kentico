@@ -36,6 +36,8 @@ How to secure a page on your Kentico website?
 1. Select the required user roles to restrict access to the page in _"Users and Roles"_ field under _Permissions_ section
 1. Specify access rights in _"Access rights"_ table
 1. Set a _"Requires authentication"_ to "Yes" under _Access_ section
+
+<img src="https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/assets/page_permissions.png" alt="Kentico page access permissions: Users and Roles" width="350">
 <img src="https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/assets/page_access.png" alt="Kentico page access permissions" width="350">
 
 # Contribution
