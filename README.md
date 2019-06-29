@@ -40,6 +40,14 @@ How to secure a page on your Kentico website?
 <img src="https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/assets/page_permissions.png" alt="Kentico page access permissions: Users and Roles" width="350">
 <img src="https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/assets/page_access.png" alt="Kentico page access permissions" width="350">
 
+# Configuration Guide
+1. Include AzureADAuthInKentico project into your Kentico solution
+1. Restore Nuget packages for AzureADAuthInKentico project
+1. Check Kentico references in AzureADAuthInKentico project (the ones pointing to /lib/ folder) and make sure that you use your Kentico assemblies
+1. Modify settings to utilise your Azure AD keys
+1. Build and run
+That is all, you are ready to secure your Kentico pages and use Azure AD accounts to access them.
+
 # Contribution
 Hope you found the above solution helpful, your contributions and suggestions will be very much appreciated. Please submit a pull request with your code enhancements.
 
