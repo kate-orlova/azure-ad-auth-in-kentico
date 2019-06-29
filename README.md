@@ -46,6 +46,7 @@ How to secure a page on your Kentico website?
 1. Check Kentico references in AzureADAuthInKentico project (the ones pointing to /lib/ folder) and make sure that you use your Kentico assemblies
 1. Modify settings to utilise your Azure AD keys
 1. Build and run
+
 That is all, you are ready to secure your Kentico pages and use Azure AD accounts to access them.
 
 # Contribution
