@@ -40,6 +40,19 @@ How to secure a page on your Kentico website?
 <img src="https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/assets/page_permissions.png" alt="Kentico page access permissions: Users and Roles" width="350">
 <img src="https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/assets/page_access.png" alt="Kentico page access permissions" width="350">
 
+# Configuration Guide
+1. Make sure that your Kentico application is registered in Azure AD;
+1. Include AzureADAuthInKentico project into your Kentico solution;
+1. Restore Nuget packages for AzureADAuthInKentico project;
+1. Check Kentico references in AzureADAuthInKentico project (the ones pointing to /lib/ folder) and make sure that you use your Kentico assemblies;
+1. Define Azure AD registration parameters in Kentico Settings at a website / global level: _Client Id, Application Key, Tenant Id, Azure Groups to sync_ (see above about where to find them);
+1. Build and run;
+1. Now you are ready to secure your Kentico pages and use Azure AD accounts to access them:
+   - Specify a login page for users in front-end, go to _"Settings -> Security & Membership -> Content"_ and set a _"Website logon page URL"_ field to your login page with the placed Login control on it;
+   - Secure a page you want to be behind login (_see the "How to secure a page on your Kentico website?" section above_).
+   
+That is all, enjoy!
+
 # Contribution
 Hope you found the above solution helpful, your contributions and suggestions will be very much appreciated. Please submit a pull request with your code enhancements.
 
