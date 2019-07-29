@@ -46,6 +46,9 @@ How to secure a page on your Kentico website?
    1. Kentico 11: _Kentico11\AzureADAuthenticationModule_K11.zip_
    1. Kentico 12: _Kentico12\AzureADAuthenticationModule_K12.zip_
 
+Go to _Sites > Import site or objects > Upload_ and select a package. Tick off an _"Import code files"_ checkbox during import.
+
+
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
 1. Include AzureADAuthInKentico project into your Kentico solution;
