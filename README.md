@@ -48,6 +48,16 @@ How to secure a page on your Kentico website?
 
 Go to _Sites > Import site or objects > Upload_ and select a package. Tick off an _"Import code files"_ checkbox during import.
 
+2. Include the imported code files into your project in Visual Studio:
+   1. _CMSGlobalFiles\AzureADAuthentication\AzureADAuthenticationHandler.cs_
+   1. _CMSModules\AzureADAuthentication\AzureADAuthenticationModule.cs_
+   1. _CMSModules\AzureADAuthentication\AzureADAuthenticationSettings.cs_
+   1. _CMSWebParts\AzureADAuthentication\Login.ascx_
+   1. _CMSWebParts\AzureADAuthentication\Login.ascx.cs_
+   1. _CMSWebParts\AzureADAuthentication\Login.ascx.designer.cs_
+   1. _CMSWebParts\AzureADAuthentication\Logout.ascx_
+   1. _CMSWebParts\AzureADAuthentication\Logout.ascx.cs_
+   1. _CMSWebParts\AzureADAuthentication\Logout.ascx.designer.cs_
 
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
