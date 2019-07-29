@@ -6,7 +6,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/kate-orlova/azure-ad-auth-in-kentico.svg?style=flat)
 
 # Azure AD authentication in Kentico
-Azure Active Directory (AD) authentication in Kentico project implements an Azure AD identity provider for Kentico to verify user accounts existing in a business directory and issue security tokens upon successful authentication of those users.
+Azure Active Directory (AD) authentication in Kentico project implements an Azure AD identity provider for Kentico 10, 11 and 12 to verify user accounts existing in a business directory and issue security tokens upon successful authentication of those users.
 
 The following diagram demonstrates the login process flow
 ![Sign in process flow](/assets/sign_in_flow.png)
@@ -39,6 +39,12 @@ How to secure a page on your Kentico website?
 
 <img src="https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/assets/page_permissions.png" alt="Kentico page access permissions: Users and Roles" width="350">
 <img src="https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/assets/page_access.png" alt="Kentico page access permissions" width="350">
+
+# Installation steps
+1. Import a relevant Kentico module package for your CMS version:
+   1. Kentico 10: _Kentico10\AzureADAuthenticationModule_K10.zip_
+   1. Kentico 11: _Kentico11\AzureADAuthenticationModule_K11.zip_
+   1. Kentico 12: _Kentico12\AzureADAuthenticationModule_K12.zip_
 
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
