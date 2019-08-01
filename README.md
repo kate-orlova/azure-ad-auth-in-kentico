@@ -67,6 +67,8 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
 
     `<add name ="AzureADAuthenticationHandler" verb="*" path="AzureADAuthentication.axd" type="AzureADAuthentication.Handlers.AzureADAuthenticationHandler" />`
 
+5. Rebuild your solution and open Kentico CMS Admin area
+
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
 1. Include AzureADAuthInKentico project into your Kentico solution;
