@@ -59,6 +59,10 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
    1. _CMSWebParts\AzureADAuthentication\Logout.ascx.cs_
    1. _CMSWebParts\AzureADAuthentication\Logout.ascx.designer.cs_
 
+3. Install the following Nuget packages into your solution:
+   1. `Install-Package Microsoft.Azure.ActiveDirectory.GraphClient`
+   1. `Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory`
+
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
 1. Include AzureADAuthInKentico project into your Kentico solution;
