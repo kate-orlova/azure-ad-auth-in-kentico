@@ -63,6 +63,10 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
    1. `Install-Package Microsoft.Azure.ActiveDirectory.GraphClient`
    1. `Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory`
 
+4. Register the following handler in `web.config`:
+
+    `<add name ="AzureADAuthenticationHandler" verb="*" path="AzureADAuthentication.axd" type="AzureADAuthentication.Handlers.AzureADAuthenticationHandler" />`
+
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
 1. Include AzureADAuthInKentico project into your Kentico solution;
