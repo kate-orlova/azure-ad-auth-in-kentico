@@ -69,6 +69,12 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
 
 5. Rebuild your solution and open Kentico CMS Admin area
 
+6. Fill in the following settings in _Settings > Security & Membership > Authentication > Azure AD_:
+   1. _Client ID_
+   1. _Tenant ID_
+   1. _Application Key_
+   1. _Authentication Redirect Page_
+
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
 1. Include AzureADAuthInKentico project into your Kentico solution;
