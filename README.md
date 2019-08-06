@@ -74,6 +74,8 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
    1. _Tenant ID_
    1. _Application Key_
    1. _Authentication Redirect Page_
+   
+7. Make sure that your Kentico application is registered in Azure AD
 
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
