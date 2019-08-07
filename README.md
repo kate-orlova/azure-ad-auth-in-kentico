@@ -75,7 +75,7 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
    1. _Application Key_
    1. _Authentication Redirect Page_
    
-7. Make sure that your Kentico application is registered in Azure AD
+7. Make sure that your Kentico application is registered in Azure AD; note that the redirect URL has to be the full URL including the protocol and port, for example, _http://localhost/AzureADAuthentication.axd_ or _http://localhost/Kentico11/AzureADAuthentication.axd_
 
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
