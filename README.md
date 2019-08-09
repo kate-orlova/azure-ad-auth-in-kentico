@@ -80,6 +80,8 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
    The below is an Azure admin interface where you can register your redirect URLs
    ![Azure Admin interface for redirects](/assets/azure_admin_interface_for_redirect_URLs.png)
    
+8. Add an _"Azure AD Login"_ webpart to a page you want to secure and then try to browse it in front-end and login!
+   
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
 1. Include AzureADAuthInKentico project into your Kentico solution;
