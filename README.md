@@ -86,6 +86,7 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
 For testing purpose you can use the following test details:
 1. Client ID: _f25b409a-888a-47bc-94cf-c1d27ac9ad57_
 1. Tenant ID: _20235006-a5ce-40f9-a061-cd97b588de50_
+1. Application Key: _q7mX1-q[+LetIB42cAY.nsp8e4q[K452_
 
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
