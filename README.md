@@ -88,6 +88,12 @@ For testing purpose you can use the following test details:
 1. Tenant ID: _20235006-a5ce-40f9-a061-cd97b588de50_
 1. Application Key: _q7mX1-q[+LetIB42cAY.nsp8e4q[K452_
 
+# Registered Redirect URLs
+1. http://localhost/AzureADAuthentication.axd
+1. http://localhost/Kentico12_2/AzureADAuthentication.axd
+1. http://localhost/Kentico10/AzureADAuthentication.axd
+1. http://localhost/Kentico11/AzureADAuthentication.axd
+
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
 1. Include AzureADAuthInKentico project into your Kentico solution;
