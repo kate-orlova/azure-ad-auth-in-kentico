@@ -83,12 +83,13 @@ Go to _Sites > Import site or objects > Upload_ and select a package. Tick off a
 8. Add an _"Azure AD Login"_ webpart to a page you want to secure and then try to browse it in front-end and login!
 
 # Test Data
+## General application settings
 For testing purpose you can use the following test details:
 1. Client ID: _f25b409a-888a-47bc-94cf-c1d27ac9ad57_
 1. Tenant ID: _20235006-a5ce-40f9-a061-cd97b588de50_
 1. Application Key: _q7mX1-q[+LetIB42cAY.nsp8e4q[K452_
 
-# Registered Redirect URLs
+## Registered Redirect URLs
 The following Redirect URLs are registered:
 1. http://localhost/AzureADAuthentication.axd
 1. http://localhost/Kentico12_2/AzureADAuthentication.axd
