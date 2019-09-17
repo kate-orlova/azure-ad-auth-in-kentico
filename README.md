@@ -89,6 +89,7 @@ For testing purpose you can use the following test details:
 1. Application Key: _q7mX1-q[+LetIB42cAY.nsp8e4q[K452_
 
 # Registered Redirect URLs
+The following Redirect URLs are registered:
 1. http://localhost/AzureADAuthentication.axd
 1. http://localhost/Kentico12_2/AzureADAuthentication.axd
 1. http://localhost/Kentico10/AzureADAuthentication.axd
