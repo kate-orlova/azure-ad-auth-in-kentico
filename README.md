@@ -98,6 +98,7 @@ The following Redirect URLs are registered:
 
 ## Test user
 Username: _test@testdancinggoat.onmicrosoft.com_
+Group: _Test Group_
 
 # Configuration Guide
 1. Make sure that your Kentico application is registered in Azure AD;
