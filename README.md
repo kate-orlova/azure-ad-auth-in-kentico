@@ -1,4 +1,4 @@
-
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kate-orlova/azure-ad-auth-in-kentico)
 [![GitHub release](https://img.shields.io/github/release-date/kate-orlova/azure-ad-auth-in-kentico.svg?style=flat)](https://github.com/kate-orlova/azure-ad-auth-in-kentico/releases/tag/MVPRelease)
 [![GitHub license](https://img.shields.io/github/license/kate-orlova/azure-ad-auth-in-kentico.svg)](https://github.com/kate-orlova/azure-ad-auth-in-kentico/blob/master/LICENSE)
 ![GitHub language count](https://img.shields.io/github/languages/count/kate-orlova/azure-ad-auth-in-kentico.svg?style=flat)
